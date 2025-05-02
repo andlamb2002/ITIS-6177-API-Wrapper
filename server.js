@@ -92,7 +92,8 @@ function handleError(res, error) {
  *             properties:
  *               imageUrl:
  *                 type: string
- *                 example: "https://freerangestock.com/sample/135777/overhead-view-of-text-thank-you-arranged-on-an-old-bulletin-board.jpg"
+ *           example:
+ *             imageUrl: "https://freerangestock.com/sample/135777/overhead-view-of-text-thank-you-arranged-on-an-old-bulletin-board.jpg"
  *     responses:
  *       200:
  *         description: Text extracted successfully or no text detected from image.
@@ -136,7 +137,6 @@ function handleError(res, error) {
  *               error: "Azure OCR failed."
  *               message: "Azure endpoint error."
  */
-
 app.post('/api/ocr/url', async (req, res) => {
     if (
         !req.body ||
