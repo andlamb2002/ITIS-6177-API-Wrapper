@@ -11,15 +11,21 @@ This is a simple API Wrapper for Optical Character Recognition (OCR) using Micro
 ## Examples
 
 ### Example 1: OCR with Image URL
-Original Image:  
-![Example 1 Image](samples/sample_url.jpg)
-Extracted Text (Postman Response):  
+Original Image:
+
+<img src="samples/sample_url.jpg" width="300"/>
+
+Extracted Text:  
+
 ![Example 1 Screenshot](samples/result_url.png)
 
 ### Example 2: OCR with Image Upload
-Original Image:  
-![Example 2 Image](samples/sample_upload.JPG)
-Extracted Text (Postman Response):  
+Original Image:
+
+<img src="samples/sample_upload.jpg" width="300"/>
+
+Extracted Text:  
+
 ![Example 2 Screenshot](samples/result_upload.png)
 
 <!-- ## Use Cases
