@@ -1,9 +1,5 @@
 # API Wrapper User Guide
-
-## API Reference
-For full request/response formats and try-it-out testing, check out the **Swagger UI**:
-
-[Swagger Documentation](http://147.182.167.158:3000/docs/)
+For full request/response formats and try-it-out testing, check out the [Swagger Documentation](http://147.182.167.158:3000/docs/).
 
 ## Summary of API
 This is a simple API Wrapper for **Optical Character Recognition (OCR)** using **Microsoft’s Azure Optical Character Recognition** service. It takes an image URL or file as input, applies Azure OCR to detect and extract text, and returns the recognized text in plain **JSON** format. Comprehensive error handling is included for invalid input, unsupported files, and Azure service failures.
