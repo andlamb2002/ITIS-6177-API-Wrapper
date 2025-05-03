@@ -7,7 +7,7 @@ This is a simple API Wrapper for **Optical Character Recognition (OCR)** using *
 
 - **Base URL**: `http://147.182.167.158:3000/api/ocr`
 - **Swagger UI**: [http://147.182.167.158:3000/docs/](http://147.182.167.158:3000/docs/)
-- **User Guide**: See `user_guide.md` for detailed usage documentation
+- **User Guide**: [user_guide.md](https://github.com/andlamb2002/ITIS-6177-API-Wrapper/blob/main/user_guide.md)
 
 ## Key Features
 
@@ -36,7 +36,7 @@ This is a simple API Wrapper for **Optical Character Recognition (OCR)** using *
 
 ## Image Sources
 
-You can find these images in the `test_data/` folder of this repository, which were obtained from:
+You can find these images in the [test_data](https://github.com/andlamb2002/ITIS-6177-API-Wrapper/tree/main/test_data) folder of this repository, which were obtained from:
 - [MSRA-TD500 Text Detection Dataset](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500))
 - Other custom image searches and manually created examples
 
