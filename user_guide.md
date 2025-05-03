@@ -22,7 +22,7 @@ Extracted Text:
 ### Example 2: OCR with Image Upload
 Original Image:
 
-<img src="samples/sample_upload.jpg" width="300"/>
+<img src="samples/sample_upload.JPG" width="300"/>
 
 Extracted Text:  
 
