@@ -6,7 +6,7 @@ For full request/response formats and try-it-out testing, check out the **Swagge
 [Swagger Documentation](http://147.182.167.158:3000/docs/)
 
 ## Summary of API
-This is a simple API Wrapper for **Optical Character Recognition (OCR)** using Microsoft’s Azure Optical Character Recognition service. It takes an image URL or file as input, applies Azure OCR to detect and extract text, and returns the recognized text in plain JSON format. Comprehensive error handling is included for invalid input, unsupported files, and Azure service failures.
+This is a simple API Wrapper for **Optical Character Recognition (OCR)** using **Microsoft’s Azure Optical Character Recognition** service. It takes an image URL or file as input, applies Azure OCR to detect and extract text, and returns the recognized text in plain **JSON** format. Comprehensive error handling is included for invalid input, unsupported files, and Azure service failures.
 
 - **Base URL**: `http://147.182.167.158:3000/api/ocr`
 - **Endpoints**:
@@ -22,7 +22,7 @@ This is a simple API Wrapper for **Optical Character Recognition (OCR)** using M
 ## Image Requirements
 
 - Supports all image file formats, including: `JPG`, `PNG`, `BMP`, `TIFF`, `WEBP`, `AVIF`, and even `GIF`
-- Maximum file size: 4 MB
+- Maximum file size: 4MB
 - Images must be between 50 and 4,200 pixels in both width and height
 - If no text is detected, it returns an empty 'text' field
 
@@ -94,5 +94,3 @@ This API uses **HTTP status codes** to indicate success or failure of a request.
 - `413 Payload Too Large`: The uploaded file exceeds the 4MB limit
 - `415 Unsupported Media Type`: The file format is not supported
 - `500 Internal Server Error`: An unexpected error at the Azure endpoint occurred
-
-[Swagger UI Documentation](http://147.182.167.158:3000/docs/)
