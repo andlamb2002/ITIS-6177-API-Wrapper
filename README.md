@@ -20,8 +20,8 @@ This is a simple API Wrapper for **Optical Character Recognition (OCR)** using *
 
 ## Image Requirements
 
-- **Max file size**: 4 MB
 - **Supported formats**: All image formats, including JPG, PNG, BMP, TIFF, WEBP, AVIF, and even GIF
+- **Max file size**: 4 MB
 - **Dimensions**: Images must be between 50 and 4,200 pixels in both width and height
 
 ## Tech Stack and Implementation
@@ -65,3 +65,7 @@ You can find these images in the `test_data/` folder of this repository, which w
 - `POST http://localhost:3000/api/ocr/upload` – Upload an image file using `multipart/form-data` with the field name `file`
 
 Or access the Swagger UI at: `http://localhost:3000/docs`
+
+## Disclaimer
+
+This project was created as part of the ITIS-6177 System Integration course at UNC Charlotte. It is intended for educational and demonstration purposes only.  
