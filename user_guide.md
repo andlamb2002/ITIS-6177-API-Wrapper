@@ -8,6 +8,48 @@ This is a simple API Wrapper for Optical Character Recognition (OCR) using Micro
   - `POST /url`: For submitting an image URL.
   - `POST /upload`: For direct image upload.
 
+## Use Cases
+
+- Extract text from printed materials such as documents, books, and receipts
+- Process screenshots or photos with printed text
+- Useful for applications that require text recognition
+
+## How to Use the API
+
+### Option 1: Using the `/url` Endpoint
+
+Send a POST request to the `/api/ocr/url` endpoint.
+
+Use the following JSON body with your image URL:
+
+```json
+{
+  "imageUrl": "https://example.com/sample.jpg"
+}
+```
+
+You will receive a JSON response like this:
+
+```json
+{
+  "text": "Extracted text from the image."
+}
+```
+
+### Option 2: Using the `/upload` Endpoint
+
+Send a POST request to the `/api/ocr/upload` endpoint using `multipart/form-data`.
+
+Include a single image file with the field name `file`.
+
+You will receive a JSON response like this:
+
+```json
+{
+  "text": "Extracted text from the image."
+}
+```
+
 ## Examples
 
 ### Example 1: OCR with Image URL
@@ -27,35 +69,3 @@ Original Image:
 Extracted Text:  
 
 ![Example 2 Screenshot](samples/result_upload.png)
-
-<!-- ## Use Cases
-- **Use Case 1**: Automating data retrieval for reporting.
-- **Use Case 2**: Simplifying user authentication workflows.
-- **Use Case 3**: Integrating with third-party systems.
-
-## How to Use the Endpoints
-### Endpoint A: `/endpoint-a`
-1. **Purpose**: Retrieve data based on specific criteria.
-2. **Steps**:
-    - Send a `GET` request to `/endpoint-a`.
-    - Include the required parameters in the query string.
-    - Example: `GET /endpoint-a?param1=value1&param2=value2`.
-
-### Endpoint B: `/endpoint-b`
-1. **Purpose**: Submit data for processing.
-2. **Steps**:
-    - Send a `POST` request to `/endpoint-b`.
-    - Include the required payload in the request body.
-    - Example:
-      ```json
-      {
-         "key1": "value1",
-         "key2": "value2"
-      }
-      ```
-
-## Swagger Documentation
-For detailed technical information, refer to the [Swagger Documentation](path/to/swagger-docs). It includes:
-- Expected input and output formats.
-- Error codes and their meanings.
-- Testing UI for trying out the endpoints. -->
