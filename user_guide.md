@@ -1,5 +1,10 @@
 # API Wrapper User Guide
 
+## API Reference
+For full request/response formats and try-it-out testing, check out the Swagger UI:
+
+[Swagger Documentation](http://147.182.167.158:3000/docs/)
+
 ## Summary of API
 This is a simple API Wrapper for Optical Character Recognition (OCR) using Microsoft’s Azure Optical Character Recognition service. It takes an image URL or file as input, applies Azure OCR to detect and extract text, and returns the recognized text in plain JSON format. Comprehensive error handling is included for invalid input, unsupported files, and Azure service failures.
 
@@ -76,3 +81,18 @@ Original Image:
 Extracted Text: "Phone Booth Work Stations"
 
 ![Example 2 Screenshot](samples/result_upload.png)
+
+## Error Handling
+
+This API uses HTTP status codes to indicate success or failure of a request. Each error response includes a JSON message or hint describing what went wrong.
+
+- `200 OK`: Text extracted successfully or no text detected from image.
+- `400 Bad Request`: The request failed due to a variety of possible reasons:
+  - The JSON body is incorrectly formatted
+  - The image is missing or invalid
+  - Azure OCR service returned an error
+- `413 Payload Too Large`: The uploaded file exceeds the 4 MB limit
+- `415 Unsupported Media Type`: The file format is not supported
+- `500 Internal Server Error`: An unexpected error at the Azure endpoint occurred
+
+[Swagger UI Documentation](http://147.182.167.158:3000/docs/)
