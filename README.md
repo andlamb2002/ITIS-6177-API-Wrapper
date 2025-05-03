@@ -29,7 +29,7 @@ This is a simple API Wrapper for **Optical Character Recognition (OCR)** using *
 - **Node.js + Express** – Backend server framework for handling API endpoints
 - **Axios** – Sends HTTP requests to Azure OCR's REST API with proper headers and body
 - **CORS** – Enables cross-origin access for API testing
-- **Multer** – Handles file uploads via `multipart/form-data` on the `/upload` endpoint and enforces the 4MB size limit
+- **Multer** – Handles file uploads with `multipart/form-data` and enforces the 4MB size limit
 - **Sharp** – Converts unsupported image formats (like WebP or AVIF) to PNG to ensure compatibility with Azure OCR
 - **Swagger (swagger-jsdoc + swagger-ui-express)** – Automatic generator for interactive API documentation
 - **DigitalOcean Droplet** – Continuously hosts the Express server with PM2
@@ -38,11 +38,9 @@ This is a simple API Wrapper for **Optical Character Recognition (OCR)** using *
 
 You can find these images in the `test_data/` folder of this repository, which were obtained from:
 - [MSRA-TD500 Text Detection Dataset](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500))
-- Other image searches and manually created examples
+- Other custom image searches and manually created examples
 
 ## Build Your Own Local OCR API
-
-Instructions for using the OCR API locally:
 
 1. Clone the repository:  
    `git clone https://github.com/andlamb2002/ITIS-6177-API-Wrapper.git`
@@ -52,7 +50,7 @@ Instructions for using the OCR API locally:
 
 3. Create an Azure Computer Vision resource through the [Azure Portal](https://portal.azure.com/#create/Microsoft.CognitiveServicesComputerVision). Then, add a `.env` file in the root directory with your Azure credentials:  
    ```env
-   AZURE_API_KEY=your_key_here
+   AZURE_API_KEY=your_api_key
    AZURE_ENDPOINT=https://your-azure-endpoint/
    ```
 
